@@ -87,7 +87,7 @@ const dragdrop = ({ strapi }: { strapi: Core.Strapi }) => ({
 
     strapi['apiUpdate'] = undefined;
 
-    return updates.map((entry) => ({
+    return results.map((entry) => ({
       id: entry.id,
       rank: entry[sortFieldName],
     }));
