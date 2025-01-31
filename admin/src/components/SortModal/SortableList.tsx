@@ -80,7 +80,7 @@ const SortableList = ({ data, onShowMore, hasMore, settings, onSortEnd }: Sortab
     }
 
     return (
-        <div style={{ maxWidth: '280px' }}>
+        <div style={{ maxWidth: '280px', maxHeight: '400px', overflow: 'auto' }}>
             <DndContext
                 sensors={sensors}
                 collisionDetection={closestCenter}
